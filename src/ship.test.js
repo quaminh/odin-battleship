@@ -14,6 +14,7 @@ test('calling hit', () => {
 test('check if sunk', () => {
   const ship = new Ship(2);
   ship.hit();
+  expect(ship.isSunk()).toBe(false);
   ship.hit();
   expect(ship.isSunk()).toBe(true);
 });
