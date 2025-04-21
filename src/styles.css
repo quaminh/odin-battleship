@@ -1,0 +1,44 @@
+:root {
+  --hit-color: red;
+  --miss-color: white;
+  --ship-color: gray;
+  --water-color: blue;
+  --water-color-hover: darkcyan;
+}
+
+#gameboards {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gameboard {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+  border: 1px solid black;
+}
+
+.hit {
+  background-color: var(--hit-color);
+}
+
+.miss {
+  background-color: var(--miss-color);
+}
+
+.ship {
+  background-color: var(--ship-color);
+}
+
+.water {
+  background-color: var(--water-color);
+}
+.water:hover {
+  background-color: var(--water-color-hover);
+}
